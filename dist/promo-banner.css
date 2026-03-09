@@ -1,0 +1,236 @@
+/**
+ * @ac/promo-banner
+ * Framework-agnostic promo banner styles.
+ * Use with the HTML structure from templates/promo-banner.html
+ */
+
+/* ------------------------------------------------------------------ */
+/*  Promo Banner Card                                                 */
+/* ------------------------------------------------------------------ */
+
+.ac-promo-banner {
+  padding-block: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .ac-promo-banner {
+    padding-block: 3rem;
+  }
+}
+
+.ac-promo-banner__container {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.ac-promo-banner__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #1a1f36;
+}
+
+.ac-promo-banner__card-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.ac-promo-banner__card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.ac-promo-banner__card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(26, 31, 54, 0.48),
+    rgba(26, 31, 54, 0.35),
+    transparent
+  );
+}
+
+.ac-promo-banner__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .ac-promo-banner__content {
+    padding: 3rem;
+  }
+}
+
+.ac-promo-banner__row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .ac-promo-banner__row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.ac-promo-banner__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 36rem;
+}
+
+.ac-promo-banner__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+.ac-promo-banner__headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-wrap: balance;
+  line-height: 1.25;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .ac-promo-banner__headline {
+    font-size: 1.875rem;
+  }
+}
+
+.ac-promo-banner__description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.625;
+  max-width: 28rem;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .ac-promo-banner__description {
+    font-size: 1rem;
+  }
+}
+
+.ac-promo-banner__dates {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.ac-promo-banner__date-sep {
+  width: 1px;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ac-promo-banner__date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ac-promo-banner__date-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ac-promo-banner__date-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ac-promo-banner__cta {
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/*  CTA Button (optional)                                              */
+/* ------------------------------------------------------------------ */
+
+.ac-promo-banner__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #1a1f36;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.ac-promo-banner__cta-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Skeleton (loading state)                                           */
+/* ------------------------------------------------------------------ */
+
+.ac-promo-banner-skeleton {
+  padding-block: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .ac-promo-banner-skeleton {
+    padding-block: 3rem;
+  }
+}
+
+.ac-promo-banner-skeleton__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 14rem;
+  border-radius: 1rem;
+  background-color: #1a1f36;
+}
+
+.ac-promo-banner-skeleton__loader {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  animation: ac-promo-banner-spin 1s linear infinite;
+}
+
+@keyframes ac-promo-banner-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
