@@ -1,6 +1,6 @@
 {
   "name": "@ac-comp-lib/component-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Framework-agnostic component library: HTML structure + CSS. Use with React, Vue, vanilla JS, or any stack.",
   "type": "module",
   "publishConfig": {
@@ -40,9 +40,19 @@
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true },
-    "react-dom": { "optional": true }
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
-  "keywords": ["components", "air-canada", "css", "html", "promo-banner"],
+  "keywords": [
+    "components",
+    "air-canada",
+    "css",
+    "html",
+    "promo-banner"
+  ],
   "license": "MIT"
 }
