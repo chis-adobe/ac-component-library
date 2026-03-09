@@ -1,24 +1,23 @@
-# @ac/component-library
+# @ac-comp-lib/component-library
 
 Framework-agnostic component library: **HTML structure + CSS**. Use with React, Vue, vanilla JS, or any stack.
 
 ## Installation
 
 ```bash
-pnpm add @ac/component-library
+pnpm add @ac-comp-lib/component-library
 # or
-npm install @ac/component-library
+npm install @ac-comp-lib/component-library
 ```
 
-**Local development** (before publishing): use `"@ac/component-library": "file:../ac-component-library"` in your `package.json`.
+**Local development:** `"@ac-comp-lib/component-library": "file:../ac-component-library"`
 
 ## Publishing to npm
 
-1. Create a separate git repo for this package and push it to GitHub.
-2. Update `repository.url` in `package.json` with your repo URL.
-3. If using the `@ac` scope, create the org at [npmjs.com](https://www.npmjs.com) (or use your username: `@yourusername/component-library`).
-4. From the package directory:
+1. Push your code to GitHub: https://github.com/chis-adobe/ac-component-library
+2. From the package directory:
    ```bash
+   cd ac-component-library
    npm login
    npm publish
    ```
@@ -31,16 +30,16 @@ npm install @ac/component-library
 
 1. Import the CSS:
    ```js
-   import "@ac/component-library/promo-banner"
+   import "@ac-comp-lib/component-library/promo-banner"
    ```
-   Or in HTML: `<link rel="stylesheet" href="node_modules/@ac/component-library/dist/promo-banner.css">`
+   Or in HTML: `<link rel="stylesheet" href="node_modules/@ac-comp-lib/component-library/dist/promo-banner.css">`
 
 2. Use the HTML structure from `templates/promo-banner.html` — replace placeholders with your content.
 
 #### React
 
 ```tsx
-import { PromoBannerCard, PromoBannerCardSkeleton } from "@ac/component-library/promo-banner/react"
+import { PromoBannerCard, PromoBannerCardSkeleton } from "@ac-comp-lib/component-library/promo-banner/react"
 // CSS is imported automatically by the React wrapper
 
 <PromoBannerCard

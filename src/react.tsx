@@ -1,10 +1,10 @@
 /**
- * Optional React wrapper for @ac/component-library promo-banner.
+ * Optional React wrapper for @ac-comp-lib/component-library promo-banner.
  * Imports the CSS and renders the HTML structure with the shared class names.
  * Your project must have React installed.
  */
 
-import "@ac/component-library/promo-banner"
+import "@ac-comp-lib/component-library/promo-banner"
 import * as React from "react"
 
 export interface PromoBannerDate {

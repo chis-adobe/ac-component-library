@@ -1,5 +1,5 @@
 {
-  "name": "@ac/component-library",
+  "name": "@ac-comp-lib/component-library",
   "version": "0.1.0",
   "description": "Framework-agnostic component library: HTML structure + CSS. Use with React, Vue, vanilla JS, or any stack.",
   "type": "module",
