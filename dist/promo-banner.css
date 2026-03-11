@@ -50,7 +50,7 @@
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(251, 3, 172, 0.48),
+    rgba(54, 26, 45, 0.48),
     rgba(26, 31, 54, 0.35),
     transparent
   );
@@ -111,7 +111,7 @@
 .ac-promo-banner__headline {
   font-size: 1.5rem;
   font-weight: 700;
-  color: blue;
+  color: #fff;
   text-wrap: balance;
   line-height: 1.25;
   margin: 0;
